@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+
+	<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+	/>
+
+	<script src="js/cursor.js" defer></script>
+	<link rel="stylesheet" href="css/style.css">
+	<title>RTN</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			
+			<div class="cursor"></div>
+			<div class="cursor2"></div>
+
+			<div class="under-body">
+				<header class="header container">
+						<a class="header__logo logo animation-item" href="#">
+							<img class="logo__img" src="pictures/icons/logo.png" alt="">
+						</a>
+				</header>
+
+				<main>
+					<section class="popup-menu">
+						<div class="close__menu-button">
+							<p class="close__text">ESC</p>
+						</div>
+						<div class="popup-menu__inner" id="popup-menu__inner">
+							<div class="menu__ceil-wrapper">
+								<div class="menu__ceil color__ceil-1">
+									<p class="ceil__text menu__text-main__color">light black</p>
+									<p class="ceil__text menu__text-white">WHITE</p>
+								</div>
+								<div class="menu__ceil color__ceil-2">
+									<p class="ceil__text menu__text-main__color">light black</p>
+									<p class="ceil__text menu__text-turquoise">turquoise</p>
+								</div>
+								<div class="menu__ceil color__ceil-3">
+									<p class="ceil__text menu__text-main__color">light black</p>
+									<p class="ceil__text menu__text-green">green</p>
+								</div>
+								<div class="menu__ceil color__ceil-4">
+									<p class="ceil__text menu__text-main__color">light black</p>
+									<p class="ceil__text menu__text-violet">violet</p>
+								</div>
+								<!------->
+								<div class="menu__ceil hints__ceil">
+									<p class="ceil__text">Enable/Disable hints</p>
+								</div>
+
+								<div class="menu__ceil empty__ceil empty__ceil-1">
+									<p class="ceil__text">In development</p>
+								</div>
+
+								<div class="menu__ceil music__ceil">
+								   <label class="music__switch">
+								  	<input type="checkbox" class="chk1">
+								  	<span class="music__slider"></span>
+									</label>
+									
+									<input class="volume__music" type="range" min="0" max="10" value="6" step="0.1" />
+								</div>
+
+								<div class="menu__ceil flashlight__ceil">
+									<p class="ceil__text">Turn off flashlight</p>
+									<label class="flashlight__switch">
+									  <input class="chk_85" type="checkbox">
+									  <span class="flashlight__slider">
+									    <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" class="torch">
+									    <path d="M 63.85,54.65 Q 62.77,54.13 61.88,53.31 Q 54.13,46.12 46.31,37.69 Q 43.88,35.06 44.29,31.53 Q 44.51,29.56 46.54,25.87 Q 56.15,8.39 59.06,3.56 Q 60.59,1.03 63.83,2.41 Q 67.73,4.07 71.11,6.55 Q 72.85,7.82 77.51,11.86 Q 89.11,21.92 96.94,34.06 Q 100.09,38.95 95.24,41.73 Q 83.77,48.31 72.16,54.64 Q 68.24,56.77 63.85,54.65 Z" fill="#ffffff"></path>
+									    <path d="M 14.03,66.29 Q 27.40,51.66 40.57,37.33 A 0.54,0.54 52.1 0 1 41.44,37.44 Q 43.25,40.72 45.58,43.04 Q 47.66,45.11 47.71,45.17 Q 54.67,52.58 62.60,58.93 A 0.44,0.43 43.0 0 1 62.63,59.59 Q 42.87,77.87 22.77,95.78 Q 20.75,97.58 19.20,97.93 Q 16.72,98.49 14.81,96.94 Q 6.88,90.47 2.81,84.94 Q 1.47,83.11 2.03,80.84 Q 2.37,79.43 4.04,77.51 Q 8.97,71.84 14.03,66.29 ZM 42.9269,57.1766 A 3.76 3.76 0.0 0 0 37.6102,57.0930 L 33.1721,61.3938 A 3.76 3.76 0.0 0 0 33.0886,66.7106 L 33.3531,66.9834 A 3.76 3.76 0.0 0 0 38.6698,67.0670 L 43.1079,62.7662 A 3.76 3.76 0.0 0 0 43.1914,57.4494 L 42.9269,57.1766 Z" fill="#ffffff"></path>
+									    </svg>
+									    <svg class="b" width="100%" height="50%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+									    <path d="M29 20L31 22" class="bling_85"></path>
+									    <path d="M31.5 15H34.5" class="bling_85"></path>
+									    <path d="M29 10L31 8" class="bling_85"></path>
+									    </svg>
+									  </span>
+									</label>
+								</div>
+
+								<div class="menu__ceil prompt__ceil">
+									<p class="ceil__text">Press “Tab” to open/close the menu</p>
+									<p class="ceil__text">Press “E” to turn on/off flashlight</p>
+								</div>
+
+								<div class="menu__ceil empty__ceil empty__ceil-3">
+									<p class="ceil__text">In development</p>
+								</div>
+
+								<div class="menu__ceil error__ceil">
+									<p class="ceil__text">Found a bug or error?</p>
+
+									<ul class="social__list">
+										<li class="social__item">
+											<a class="social__link" target="_blank" href="https://www.instagram.com/sidoorenko/">
+												<img class="social__icon" src="pictures/icons/instagram.png" alt="Instagram">
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" target="_blank" href="https://t.me/SidoorenkoD">
+												<img class="social__icon" src="pictures/icons/telegram.png" alt="Telegram">
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" target="_blank" href="https://www.youtube.com/channel/UCpnjn6rx7vc1y_DbUFP-sFw">
+												<img class="social__icon" src="pictures/icons/youtube.png" alt="Youtube">
+											</a>
+										</li>
+										<li class="social__item">
+											<a class="social__link" target="_blank" href="">
+												<img class="social__icon" src="pictures/icons/email.png" alt="Email">
+											</a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="indestructible container">
+							<div class="section__title indestructible__title">
+								<h1 class="section__subject indestructible__subject animation-item">Man and nature: indestructible bond, constant interaction</h1>
+								<p class="section__subtitle indestructible__subtitle animation-item">We forgot to whom we are grateful</p>
+								<a class="section__button indestructible__button animation-item" href="#">Learn More</a>
+							</div>
+							<div class="indestructible__pictures-wrapper">
+								<img class="sphere__pictures animation-item" src="pictures/illustration/sphere.png" alt="">
+							</div>
+					</section>
+
+					<section class="statistic container">
+							<ul class="statistic__list">
+								<li class="statistic__item animation-item">
+									<img class="statistic__icon icon-woter" src="pictures/icons/woter.png" alt="Woter icon">
+									<h2 class="statistic__subject">Remaining water</h2>
+									<p class="statistic__info">35 million meters³</p>
+								</li>
+
+								<li class="statistic__item animation-item">
+									<img class="statistic__icon icon-tree" src="pictures/icons/destroy-tree.png" alt="Tree Icon">
+									<h2 class="statistic__subject">Deforestation per day</h2>
+									<p class="statistic__info">410959</p>
+								</li>
+
+								<li class="statistic__item animation-item">
+									<img class="statistic__icon icon-plastic" src="pictures/icons/plastic.png" alt="Plastic Icon">
+									<h2 class="statistic__subject">Debris in the ocean</h2>
+									<p class="statistic__info">75-199 million tons</p>
+								</li>
+							</ul>
+					</section>
+
+					<section class="nature container">
+							<div class="section__title nature__title">
+								<h1 class="section__subject nature__subject animation-item">On the role of nature in human life ...</h1>
+								<p class="section__subtitle nature__subtitle animation-item">In the Renaissance, the attitude towards nature changed again. A person discovers its beauty, sees in it a source of joy and pleasure. It is not without reason that so many magnificent works of art appear during this period of time, glorifying the beauty of the surrounding world.</p>
+								<a class="section__button nature__button animation-item" href="#">Learn More</a>
+							</div>
+
+							<div class="nature__pictures-wrapper">
+								<img class="nature__pictures animation-item" src="pictures/illustration/face-1.png" alt="">
+							</div>
+					</section>
+
+					<section class="related container">
+							<div class="related__pictures-wrapper">
+								<img class="related__pictures animation-item" src="pictures/illustration/brain-1-5.png" alt="">
+							</div>
+
+							<div class="section__title related__title">
+								<h1 class="section__subject related__subject animation-item">How are humans and nature related?</h1>
+								<p class="section__subtitle related__subtitle animation-item">In the course of our life, we largely depend on nature. It provides us with much-needed things like air, water, light, food. It depends only on us in what form we will save all these valuable resources for ourselves and future generations.</p>
+								<a class="section__button related__button animation-item" href="#">Learn More</a>
+							</div>
+					</section>
+
+					<section class="influence container">
+							<div class="section__title influence__title">
+								<h1 class="section__subject influence__subject animation-item">The influence of man on nature: we do not need anything, we do not feel sorry for anyone</h1>
+								<p class="section__subtitle influence__subtitle animation-item">The "Crown of Creation", armed with technologies, machines and mechanisms, has been actively influencing nature for many years, sometimes without thinking about what consequences this may lead to.</p>
+								<a class="section__button influence__button animation-item" href="#">Learn More</a>
+							</div>
+
+							<div class="influence__pictures-wrapper">
+								<img class="influence__pictures animation-item" src="pictures/illustration/world-1.png" alt="">
+							</div>
+					</section>
+
+					<section class="writers prompt-item container">
+							
+							<div class="writers__title section__title">
+								<h2 class="book__subject section__subject animation-item">Books that will help you not to get lost in the stream of thoughts</h2>
+							</div>
+
+							<div class="prompt">
+								<audio src="music/prompt-music.mp3" autoplay="autoplay"></audio>
+								<p class="prompt__text">
+									Use the left/right arrow to move the slider
+								</p>
+
+								<div class="prompt__button-wrapper">
+									<div class="prompt__left-button prompt__button">
+										<img class="prompt__icon" src="pictures/icons/arrow.png" alt="Arrow icon">
+									</div>
+									<div class="prompt__right-button prompt__button">
+										<img class="prompt__icon" src="pictures/icons/arrow.png" alt="Arrow icon">
+									</div>
+								</div>
+							</div>
+
+							<div class="writers__swiper swiper">
+							  <!-- Additional required wrapper -->
+							  <div class="writers__swiper-wrapper swiper-wrapper">
+							    <!-- Slides -->
+							    <div class="writers-slide swiper-slide">
+							    	<div class="writers__icon">
+							    		<?xml version="1.0" standalone="no"?>
+												<svg class="book-world__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+												 width="288.000000pt" height="288.000000pt" viewBox="0 0 288.000000 288.000000"
+												 preserveAspectRatio="xMidYMid meet">
+
+												<g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)"
+												fill="#00ffd8" stroke="none">
+												<path d="M1258 2554 c-410 -63 -749 -359 -889 -774 -90 -271 -72 -564 52 -820
+												70 -145 90 -170 138 -170 78 0 92 63 36 157 -46 78 -81 166 -107 271 -27 111
+												-30 320 -5 429 19 81 74 233 86 233 16 0 54 -101 90 -245 45 -174 82 -260 142
+												-328 105 -120 265 -149 347 -64 57 60 64 110 31 224 -13 43 -19 82 -15 97 4
+												15 38 59 77 99 88 91 113 135 113 207 1 48 -5 65 -43 128 l-44 72 17 43 c9 24
+												37 72 62 107 52 71 83 134 84 168 0 33 20 36 125 24 89 -11 184 -36 260 -68
+												34 -14 36 -16 22 -32 -30 -32 -66 -127 -76 -195 -18 -125 19 -265 81 -310 41
+												-31 101 -26 147 11 37 30 40 30 172 34 74 2 140 6 148 8 18 6 62 -100 88 -210
+												21 -90 24 -295 4 -385 -52 -246 -188 -470 -363 -600 l-38 -27 -25 53 c-47 102
+												-29 196 68 346 136 211 158 340 76 453 -43 59 -98 84 -184 83 -59 0 -105 -12
+												-290 -72 -121 -40 -238 -81 -260 -91 -112 -54 -169 -146 -184 -300 -11 -108
+												-1 -218 23 -256 18 -26 92 -84 109 -84 24 0 48 -38 68 -104 25 -85 61 -150 94
+												-172 48 -31 30 -37 -87 -31 -195 11 -366 66 -523 171 -38 25 -77 46 -88 46
+												-48 0 -83 -48 -71 -96 13 -53 237 -182 394 -227 435 -126 919 29 1205 386 79
+												99 176 288 205 402 69 269 42 540 -80 791 -216 444 -699 695 -1192 618z m22
+												-159 c0 -2 -31 -52 -69 -110 -106 -160 -114 -233 -39 -346 30 -44 38 -64 32
+												-81 -3 -13 -40 -58 -81 -101 -114 -120 -135 -190 -93 -312 34 -98 23 -119 -46
+												-90 -86 36 -128 111 -179 315 -41 164 -63 222 -110 296 -19 30 -35 57 -35 61
+												0 3 21 31 47 61 58 68 172 159 260 209 105 58 313 124 313 98z m782 -201 c38
+												-30 94 -86 124 -122 l55 -67 -128 -5 c-97 -4 -136 -10 -161 -23 -19 -10 -36
+												-16 -39 -13 -14 13 -5 163 11 201 15 36 52 85 64 85 3 0 36 -25 74 -56z m-64
+												-791 c38 -52 20 -125 -64 -258 -31 -50 -73 -124 -93 -165 -34 -72 -36 -80 -36
+												-180 1 -97 3 -110 32 -172 l32 -68 -46 -20 -46 -20 -51 24 c-28 13 -71 33 -96
+												45 -54 25 -60 34 -90 133 -27 92 -70 147 -140 183 -43 22 -48 28 -54 67 -8 59
+												8 186 29 232 11 22 33 46 59 60 32 19 365 134 461 159 34 9 89 -2 103 -20z"/>
+												</g>
+												</svg>
+
+							    		<img class="book__icon" src="pictures/icons/book/book-icon.png" alt="Book icon">
+
+							    		<p class="writers__name">Jordan Peterson</p>
+							    	</div>
+							    	<!------->
+							    	<div class="writers__book-wrapper">
+							    		<div class="writers__book-inner">
+							    			<h3 class="book__name">12 rules of life. <br> An antidote to chaos</h3>
+							    			<p class="book__about">Is the modern world a citadel of order or a kingdom of chaos? Are we born to become free artists of Genesis or to follow the universal Rules?</p>
+
+							    			<p class="book__additional">"12 rules of life" - 12 bottomlessly simple truths, wise laws of existence, overthrowing stereotype and ennobling the mind and spirit of the reader.</p>
+
+							    			<a class="section__button book__button" href="#">Read More</a>
+							    		</div>
+							    	</div>
+							    </div>
+
+							    <div class="writers-slide swiper-slide">
+							    	<div class="writers__icon">
+							    		<?xml version="1.0" standalone="no"?>
+												<svg class="book-world__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+												 width="288.000000pt" height="288.000000pt" viewBox="0 0 288.000000 288.000000"
+												 preserveAspectRatio="xMidYMid meet">
+
+												<g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)"
+												fill="#00ffd8" stroke="none">
+												<path d="M1258 2554 c-410 -63 -749 -359 -889 -774 -90 -271 -72 -564 52 -820
+												70 -145 90 -170 138 -170 78 0 92 63 36 157 -46 78 -81 166 -107 271 -27 111
+												-30 320 -5 429 19 81 74 233 86 233 16 0 54 -101 90 -245 45 -174 82 -260 142
+												-328 105 -120 265 -149 347 -64 57 60 64 110 31 224 -13 43 -19 82 -15 97 4
+												15 38 59 77 99 88 91 113 135 113 207 1 48 -5 65 -43 128 l-44 72 17 43 c9 24
+												37 72 62 107 52 71 83 134 84 168 0 33 20 36 125 24 89 -11 184 -36 260 -68
+												34 -14 36 -16 22 -32 -30 -32 -66 -127 -76 -195 -18 -125 19 -265 81 -310 41
+												-31 101 -26 147 11 37 30 40 30 172 34 74 2 140 6 148 8 18 6 62 -100 88 -210
+												21 -90 24 -295 4 -385 -52 -246 -188 -470 -363 -600 l-38 -27 -25 53 c-47 102
+												-29 196 68 346 136 211 158 340 76 453 -43 59 -98 84 -184 83 -59 0 -105 -12
+												-290 -72 -121 -40 -238 -81 -260 -91 -112 -54 -169 -146 -184 -300 -11 -108
+												-1 -218 23 -256 18 -26 92 -84 109 -84 24 0 48 -38 68 -104 25 -85 61 -150 94
+												-172 48 -31 30 -37 -87 -31 -195 11 -366 66 -523 171 -38 25 -77 46 -88 46
+												-48 0 -83 -48 -71 -96 13 -53 237 -182 394 -227 435 -126 919 29 1205 386 79
+												99 176 288 205 402 69 269 42 540 -80 791 -216 444 -699 695 -1192 618z m22
+												-159 c0 -2 -31 -52 -69 -110 -106 -160 -114 -233 -39 -346 30 -44 38 -64 32
+												-81 -3 -13 -40 -58 -81 -101 -114 -120 -135 -190 -93 -312 34 -98 23 -119 -46
+												-90 -86 36 -128 111 -179 315 -41 164 -63 222 -110 296 -19 30 -35 57 -35 61
+												0 3 21 31 47 61 58 68 172 159 260 209 105 58 313 124 313 98z m782 -201 c38
+												-30 94 -86 124 -122 l55 -67 -128 -5 c-97 -4 -136 -10 -161 -23 -19 -10 -36
+												-16 -39 -13 -14 13 -5 163 11 201 15 36 52 85 64 85 3 0 36 -25 74 -56z m-64
+												-791 c38 -52 20 -125 -64 -258 -31 -50 -73 -124 -93 -165 -34 -72 -36 -80 -36
+												-180 1 -97 3 -110 32 -172 l32 -68 -46 -20 -46 -20 -51 24 c-28 13 -71 33 -96
+												45 -54 25 -60 34 -90 133 -27 92 -70 147 -140 183 -43 22 -48 28 -54 67 -8 59
+												8 186 29 232 11 22 33 46 59 60 32 19 365 134 461 159 34 9 89 -2 103 -20z"/>
+												</g>
+												</svg>
+
+							    		<img class="book__icon" src="pictures/icons/book/book-icon.png" alt="Book icon">
+
+							    		<p class="writers__name">Viktor Frankl</p>
+							    	</div>
+							    	<!------->
+							    	<div class="writers__book-wrapper">
+							    		<div class="writers__book-inner">
+							    			<h3 class="book__name">Man in search of <br> meaning</h3>
+							    			<p class="book__about">The book "Man's Search for Meaning" in 10-minute reading format: reviews of the best books, only the most important and useful.</p>
+
+							    			<p class="book__additional">“We were grateful to fate for the slightest relief, for the fact that some new trouble could happen, but did not happen.</p>
+
+							    			<a class="section__button book__button" href="#">Read More</a>
+							    		</div>
+							    	</div>
+							    </div>
+
+							    <div class="writers-slide swiper-slide">
+							    	<div class="writers__icon">
+							    		<?xml version="1.0" standalone="no"?>
+												<svg class="book-world__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+												 width="288.000000pt" height="288.000000pt" viewBox="0 0 288.000000 288.000000"
+												 preserveAspectRatio="xMidYMid meet">
+
+												<g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)"
+												fill="#00ffd8" stroke="none">
+												<path d="M1258 2554 c-410 -63 -749 -359 -889 -774 -90 -271 -72 -564 52 -820
+												70 -145 90 -170 138 -170 78 0 92 63 36 157 -46 78 -81 166 -107 271 -27 111
+												-30 320 -5 429 19 81 74 233 86 233 16 0 54 -101 90 -245 45 -174 82 -260 142
+												-328 105 -120 265 -149 347 -64 57 60 64 110 31 224 -13 43 -19 82 -15 97 4
+												15 38 59 77 99 88 91 113 135 113 207 1 48 -5 65 -43 128 l-44 72 17 43 c9 24
+												37 72 62 107 52 71 83 134 84 168 0 33 20 36 125 24 89 -11 184 -36 260 -68
+												34 -14 36 -16 22 -32 -30 -32 -66 -127 -76 -195 -18 -125 19 -265 81 -310 41
+												-31 101 -26 147 11 37 30 40 30 172 34 74 2 140 6 148 8 18 6 62 -100 88 -210
+												21 -90 24 -295 4 -385 -52 -246 -188 -470 -363 -600 l-38 -27 -25 53 c-47 102
+												-29 196 68 346 136 211 158 340 76 453 -43 59 -98 84 -184 83 -59 0 -105 -12
+												-290 -72 -121 -40 -238 -81 -260 -91 -112 -54 -169 -146 -184 -300 -11 -108
+												-1 -218 23 -256 18 -26 92 -84 109 -84 24 0 48 -38 68 -104 25 -85 61 -150 94
+												-172 48 -31 30 -37 -87 -31 -195 11 -366 66 -523 171 -38 25 -77 46 -88 46
+												-48 0 -83 -48 -71 -96 13 -53 237 -182 394 -227 435 -126 919 29 1205 386 79
+												99 176 288 205 402 69 269 42 540 -80 791 -216 444 -699 695 -1192 618z m22
+												-159 c0 -2 -31 -52 -69 -110 -106 -160 -114 -233 -39 -346 30 -44 38 -64 32
+												-81 -3 -13 -40 -58 -81 -101 -114 -120 -135 -190 -93 -312 34 -98 23 -119 -46
+												-90 -86 36 -128 111 -179 315 -41 164 -63 222 -110 296 -19 30 -35 57 -35 61
+												0 3 21 31 47 61 58 68 172 159 260 209 105 58 313 124 313 98z m782 -201 c38
+												-30 94 -86 124 -122 l55 -67 -128 -5 c-97 -4 -136 -10 -161 -23 -19 -10 -36
+												-16 -39 -13 -14 13 -5 163 11 201 15 36 52 85 64 85 3 0 36 -25 74 -56z m-64
+												-791 c38 -52 20 -125 -64 -258 -31 -50 -73 -124 -93 -165 -34 -72 -36 -80 -36
+												-180 1 -97 3 -110 32 -172 l32 -68 -46 -20 -46 -20 -51 24 c-28 13 -71 33 -96
+												45 -54 25 -60 34 -90 133 -27 92 -70 147 -140 183 -43 22 -48 28 -54 67 -8 59
+												8 186 29 232 11 22 33 46 59 60 32 19 365 134 461 159 34 9 89 -2 103 -20z"/>
+												</g>
+												</svg>
+
+							    		<img class="book__icon" src="pictures/icons/book/book-icon.png" alt="Book icon">
+
+							    		<p class="writers__name">Sigmund Freud</p>
+							    	</div>
+							    	<!------->
+							    	<div class="writers__book-wrapper">
+							    		<div class="writers__book-inner">
+							    			<h3 class="book__name">Psychopathology of <br>everyday life</h3>
+							    			<p class="book__about">Studying various deviations from the stereotypes of everyday behavior, strange defects and failures, and even, at first glance, random errors...</p>
+
+							    			<p class="book__additional">"Austrian psychologist, psychoanalyst, psychiatrist and neurologist. Freud is best known as the founder of psychoanalysis, which had a significant impact on psychology</p>
+
+							    			<a class="section__button book__button" href="#">Read More</a>
+							    		</div>
+							    	</div>
+							    </div>
+
+							    <div class="writers-slide swiper-slide">
+							    	<div class="writers__icon">
+							    		<?xml version="1.0" standalone="no"?>
+												<svg class="book-world__icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+												 width="288.000000pt" height="288.000000pt" viewBox="0 0 288.000000 288.000000"
+												 preserveAspectRatio="xMidYMid meet">
+
+												<g transform="translate(0.000000,288.000000) scale(0.100000,-0.100000)"
+												fill="#00ffd8" stroke="none">
+												<path d="M1258 2554 c-410 -63 -749 -359 -889 -774 -90 -271 -72 -564 52 -820
+												70 -145 90 -170 138 -170 78 0 92 63 36 157 -46 78 -81 166 -107 271 -27 111
+												-30 320 -5 429 19 81 74 233 86 233 16 0 54 -101 90 -245 45 -174 82 -260 142
+												-328 105 -120 265 -149 347 -64 57 60 64 110 31 224 -13 43 -19 82 -15 97 4
+												15 38 59 77 99 88 91 113 135 113 207 1 48 -5 65 -43 128 l-44 72 17 43 c9 24
+												37 72 62 107 52 71 83 134 84 168 0 33 20 36 125 24 89 -11 184 -36 260 -68
+												34 -14 36 -16 22 -32 -30 -32 -66 -127 -76 -195 -18 -125 19 -265 81 -310 41
+												-31 101 -26 147 11 37 30 40 30 172 34 74 2 140 6 148 8 18 6 62 -100 88 -210
+												21 -90 24 -295 4 -385 -52 -246 -188 -470 -363 -600 l-38 -27 -25 53 c-47 102
+												-29 196 68 346 136 211 158 340 76 453 -43 59 -98 84 -184 83 -59 0 -105 -12
+												-290 -72 -121 -40 -238 -81 -260 -91 -112 -54 -169 -146 -184 -300 -11 -108
+												-1 -218 23 -256 18 -26 92 -84 109 -84 24 0 48 -38 68 -104 25 -85 61 -150 94
+												-172 48 -31 30 -37 -87 -31 -195 11 -366 66 -523 171 -38 25 -77 46 -88 46
+												-48 0 -83 -48 -71 -96 13 -53 237 -182 394 -227 435 -126 919 29 1205 386 79
+												99 176 288 205 402 69 269 42 540 -80 791 -216 444 -699 695 -1192 618z m22
+												-159 c0 -2 -31 -52 -69 -110 -106 -160 -114 -233 -39 -346 30 -44 38 -64 32
+												-81 -3 -13 -40 -58 -81 -101 -114 -120 -135 -190 -93 -312 34 -98 23 -119 -46
+												-90 -86 36 -128 111 -179 315 -41 164 -63 222 -110 296 -19 30 -35 57 -35 61
+												0 3 21 31 47 61 58 68 172 159 260 209 105 58 313 124 313 98z m782 -201 c38
+												-30 94 -86 124 -122 l55 -67 -128 -5 c-97 -4 -136 -10 -161 -23 -19 -10 -36
+												-16 -39 -13 -14 13 -5 163 11 201 15 36 52 85 64 85 3 0 36 -25 74 -56z m-64
+												-791 c38 -52 20 -125 -64 -258 -31 -50 -73 -124 -93 -165 -34 -72 -36 -80 -36
+												-180 1 -97 3 -110 32 -172 l32 -68 -46 -20 -46 -20 -51 24 c-28 13 -71 33 -96
+												45 -54 25 -60 34 -90 133 -27 92 -70 147 -140 183 -43 22 -48 28 -54 67 -8 59
+												8 186 29 232 11 22 33 46 59 60 32 19 365 134 461 159 34 9 89 -2 103 -20z"/>
+												</g>
+												</svg>
+
+							    		<img class="book__icon" src="pictures/icons/book/book-icon.png" alt="Book icon">
+
+							    		<p class="writers__name">Eckhart Tolle</p>
+							    	</div>
+							    	<!------->
+							    	<div class="writers__book-wrapper">
+							    		<div class="writers__book-inner">
+							    			<h3 class="book__name">The Power of the Present: A <br>Guide to Spiritual Awakening</h3>
+							    			<p class="book__about">Very often the search is carried out through philosophy, religion and psychology. First we are interested in the possibilities of our intellect</p>
+
+							    			<p class="book__additional">"The publication reveals the secrets o how to learn how to learn from the events of the past life lessons in order to build the future correctly</p>
+
+							    			<a class="section__button book__button" href="#">Read More</a>
+							    		</div>
+							    	</div>
+							    </div>
+							  </div>
+							</div>
+					</section>	
+				</main>
+			</div>
+			<img class="soundButton paused" src="pictures/icons/sound.gif" alt="Sound Gif">
+
+			<audio class="audio-bg" src="music/ambient.mp3" loop></audio>
+		</div>
+	</div>
+	<!-- SCRIPT -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
+
+	<script src="js/menu.js"></script>
+
+	<script src="js\animationScroll.js"></script>
+
+	<script src="js/flashlight.js"></script>
+
+	<script src="js/centerElement.js"></script>
+
+</body>
+</html>
